@@ -37,6 +37,7 @@ public byte[] jajajaja(@PathVariable UUID id){
             return fileRepository.save(file).fileid.toString();
         } catch (Exception e) {
             e.printStackTrace();
+
             return null;
         }
 
